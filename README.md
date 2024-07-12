@@ -1,2 +1,4 @@
-# Data_Transfer_encrypted
-for bharatxr
+# Data_Transfer_Encrypted
+
+Transfering data from a MySql Server to MongoDB using flask.
+
