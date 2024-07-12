@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Transfer and Decryption</title>
+</head>
+<body>
+    <h1>Data Transfer and Decryption</h1>
+
+    <!-- Form for transferring data -->
+    <form action="/transfer" method="POST">
+        <h2>Transfer Data from MySQL to MongoDB</h2>
+        <label for="mysql_host">MySQL Host:</label>
+        <input type="text" id="mysql_host" name="mysql_host" required><br><br>
+        
+        <label for="mysql_user">MySQL User:</label>
+        <input type="text" id="mysql_user" name="mysql_user" required><br><br>
+        
+        <label for="mysql_password">MySQL Password:</label>
+        <input type="password" id="mysql_password" name="mysql_password" required><br><br>
+        
+        <label for="mysql_db">MySQL Database:</label>
+        <input type="text" id="mysql_db" name="mysql_db" required><br><br>
+        
+        <label for="mongo_uri">MongoDB URI:</label>
+        <input type="text" id="mongo_uri" name="mongo_uri" required><br><br>
+        
+        <label for="mongo_db">MongoDB Database:</label>
+        <input type="text" id="mongo_db" name="mongo_db" required><br><br>
+        
+        <label for="mongo_collection">MongoDB Collection:</label>
+        <input type="text" id="mongo_collection" name="mongo_collection" required><br><br>
+        
+        <button type="submit">Transfer Data</button>
+    </form>
+
+    <!-- Form for decrypting data -->
+    <form action="/decrypt" method="POST">
+        <h2>Decrypt Data in MongoDB Collection</h2>
+        <label for="mongo_uri">MongoDB URI:</label>
+        <input type="text" id="mongo_uri" name="mongo_uri" required><br><br>
+        
+        <label for="mongo_db">MongoDB Database:</label>
+        <input type="text" id="mongo_db" name="mongo_db" required><br><br>
+        
+        <label for="mongo_collection">MongoDB Collection:</label>
+        <input type="text" id="mongo_collection" name="mongo_collection" required><br><br>
+        
+        <button type="submit">Decrypt Data</button>
+    </form>
+
+</body>
+</html>
